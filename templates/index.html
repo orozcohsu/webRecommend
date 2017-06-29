@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Web Demo site{% endblock %}
+
+{% block page_content %}
+<h1>Dataservice Recommendation Web Demo</h1>
+<ul>
+    <li>Source: user weblog</li>
+    <li>Repository: HDFS</li>
+    <li>Algorithm: Mahout ALS</li>
+    <li>Result: Web Demo site</li>
+    <li>UUID: {{ id }} </li> 
+    <li>Query time: {{ moment(current_time).format('LLL') }} </li>
+</ul>
+
+{% endblock %}
