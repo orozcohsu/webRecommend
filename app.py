@@ -38,7 +38,7 @@ bootstrap = Bootstrap(app)
 moment = Moment(app)
 FlaskUUID(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:hadoop@localhost:3306/iii'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://iii:hadoop@localhost:3306/iii'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
