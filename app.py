@@ -103,5 +103,5 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 if __name__ == "__main__":
-    manager.add_command("runserver", Server(host='0.0.0.0', port='8888', threaded=True))
+    manager.add_command("runserver", Server(host='0.0.0.0', port='5000', threaded=True))
     manager.run()
