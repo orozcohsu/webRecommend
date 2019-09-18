@@ -11,6 +11,7 @@ services:
       - "8888"
     ports:
       - "8888:8888"
+      - "5000:5000"
     command: start-notebook.sh --NotebookApp.token=''
     volumes:
       - /iii/jupyter:/home/jovyan/webhook-dev
@@ -38,7 +39,6 @@ services:
       - "10002:10002"
       - "9083:9083"
       - "3306:3306"
-      - "5000:5000"
     volumes:
       - /tmp/docker-cluster-hadoop-name/:/data/dfs/name/
       - /tmp/docker-cluster-hadoop-data/:/data/dfs/data/
