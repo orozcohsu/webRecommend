@@ -16,7 +16,7 @@ services:
     volumes:
       - /iii/jupyter:/home/jovyan/webhook-dev
     networks:
-      chatbot_net:
+      iii_net:
         ipv4_address: 172.28.1.2
 
   hadoop:
@@ -46,10 +46,10 @@ services:
       - /tmp/docker-cluster-zookeeper-logs/:/var/log/zookeeper/
       - /tmp/docker-cluster-zeppelin-logs/:/usr/local/zeppelin/log
     networks:
-      chatbot_net:
+      iii_net:
         ipv4_address: 172.28.1.3
 networks:
-    chatbot_net:
+    iii_net:
         ipam:
             driver: default
             config:
