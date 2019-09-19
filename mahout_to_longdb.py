@@ -13,9 +13,9 @@ for a in aa:
     bb = re.findall(pat, a)
     
     if len(bb) == 7:
-        result_file.write(",%s,%s,%.10f\n" % (bb[0],bb[1],float(bb[2])))
-        result_file.write(",%s,%s,%.10f\n" % (bb[0],bb[3],float(bb[4])))
-        result_file.write(",%s,%s,%.10f\n" % (bb[0],bb[5],float(bb[6])))
+        result_file.write("%s,%s,%.10f\n" % (bb[0],bb[1],float(bb[2])))
+        result_file.write("%s,%s,%.10f\n" % (bb[0],bb[3],float(bb[4])))
+        result_file.write("%s,%s,%.10f\n" % (bb[0],bb[5],float(bb[6])))
     
 result_file.close()
 
