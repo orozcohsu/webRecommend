@@ -60,7 +60,7 @@ def recommend():
 
         id = request.cookies.get('id')
 
-        cursor.execute("select item, score from recommend where uuid ='" + id + "';")
+        cursor.execute("select item,score from recommend where uuid ='" + id + "' order by score desc;")
         result = cursor.fetchall()
         cnxn.close()
 

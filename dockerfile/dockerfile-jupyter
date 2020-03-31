@@ -7,4 +7,4 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda2-4.5.11-Linux-x86
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc
 RUN echo "conda activate base" >> ~/.bashrc
 RUN conda install python=3.7
-RUN conda install -c anaconda pyodbc
+RUN conda install pyodbc

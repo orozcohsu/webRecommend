@@ -80,7 +80,7 @@ def recommend():
 
         """
         # db query or session query
-        result=db.engine.execute(text('select * from iii.recommend'))
+        result=db.engine.execute(text('select item,score from iii.recommend'))
         result=session.query(queryRecommend).filter_by(uuid=id).order_by(score).limit(5).all()
         """
 
